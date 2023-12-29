@@ -1,11 +1,15 @@
 
+import { Provider } from 'react-redux';
 import './App.css';
-import NavComponent from './presentational/navComponent';
+import HomeComponent from './presentational/homeComponent';
+import store from './redux/store';
 
 function App() {
   return (
-    
-     <NavComponent/> 
+    <Provider store={store}>
+      <HomeComponent/> 
+    </Provider>
+     
 
   );
 }
